@@ -6,11 +6,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container" onclick="changeStream()">
+  <div class="container" onclick="changeImage()">
     <h1 class="title">go touch some grass</h1>
-    <iframe id="camFrame" allowfullscreen allow="autoplay"></iframe>
-    <p class="hint">clique para mudar a paisagem</p>
+    <img id="grassImage" src="assets/imgs/grama1.jpg" alt="Imagem de grama">
+    <button id="toggleAudio" onclick="toggleSound(event)">🌿 Som: Ativar/Desativar</button>
   </div>
+  <audio id="natureSound" loop autoplay muted>
+    <source src="assets/audio/nature.mp3" type="audio/mpeg">
+  </audio>
   <script src="script.js"></script>
 </body>
 </html>
