@@ -1,20 +1,16 @@
-<body onclick="changeStream()">
-  <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Go Touch Some Grass</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" onclick="changeStream()">
     <h1 class="title">go touch some grass</h1>
-    <p class="hint">clique para visitar um lugar verde ao redor do mundo</p>
+    <iframe id="camFrame" allowfullscreen allow="autoplay"></iframe>
+    <p class="hint">clique para mudar a paisagem</p>
   </div>
-  <script>
-    const cameraLinks = [
-      "https://www.skylinewebcams.com/en/webcam/italia/toscana/firenze/piazzale-michelangelo.html",
-      "https://www.skylinewebcams.com/en/webcam/usa/california/san-francisco/golden-gate-bridge.html",
-      "https://www.earthcam.com/world/japan/mtfuji/?cam=mtfuji",
-      "https://explore.org/livecams/african-wildlife/african-watering-hole-animal-camera"
-    ];
-    let currentIndex = 0;
-
-    function changeStream() {
-      window.open(cameraLinks[currentIndex], '_blank');
-      currentIndex = (currentIndex + 1) % cameraLinks.length;
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
+</html>
