@@ -5,42 +5,46 @@ body, html {
   background-color: black;
   color: white;
   font-family: 'Courier New', monospace;
+  cursor: url('assets/cursor.png'), auto;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .container {
   width: 100%;
   height: 100%;
   text-align: center;
-  cursor: pointer;
+  position: relative;
 }
 
 .title {
   position: absolute;
-  top: 30px;
-  width: 100%;
-  text-align: center;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 2rem;
   color: #90ee90;
-  letter-spacing: 2px;
+  z-index: 2;
+  user-select: none;
 }
 
-iframe {
-  width: 80vw;
-  height: 60vh;
-  border: none;
-  border-radius: 12px;
-  box-shadow: 0 0 30px rgba(144, 238, 144, 0.3);
+img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
-.hint {
+#toggleAudio {
   position: absolute;
-  bottom: 40px;
-  width: 100%;
-  font-size: 1rem;
-  color: #aaa;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 1px solid #90ee90;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 2;
 }
+
 
