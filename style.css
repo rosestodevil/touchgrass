@@ -32,7 +32,6 @@ iframe {
   width: 80vw;
   height: 60vh;
   border: none;
-  margin-top: 5rem;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(144, 238, 144, 0.3);
 }
@@ -44,3 +43,4 @@ iframe {
   font-size: 1rem;
   color: #aaa;
 }
+
